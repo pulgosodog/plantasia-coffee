@@ -53,10 +53,6 @@ The goal of this project is to get feedback about the achievement of technical a
   </ul>
     <ul>
     <li>JavaScript</a></li>
-  </ul>
-    <ul>
-    <li>Sass</a></li>
-  </ul>
 </details>
 
 
