@@ -35,8 +35,9 @@
 
 # 📖 Hello Microverse <a name="about-project"></a>
 
-This is a portfolio website, this is the 1st project of the portafolio, as I go through the Microverse curriculum materials I'm going to complete several small projects that will combine to create a portfolio website.
-This first project will precisely replicate one of the portfolio templates provided. However, later on during the Microverse journey it will be customized and improved it to make it more unique, as well as include more of my own projects in the portfolio.
+This is the a capstone project for Microverse Core Curriculum module #1.
+This project follows similar guidelines to real-world projects, and it is built with business specifications.
+The goal of this project is to get feedback about the achievement of technical and soft skills gained during this module of the program.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -49,6 +50,12 @@ This first project will precisely replicate one of the portfolio templates provi
   </ul>
   <ul>
     <li>CSS</a></li>
+  </ul>
+    <ul>
+    <li>JavaScript</a></li>
+  </ul>
+    <ul>
+    <li>Sass</a></li>
   </ul>
 </details>
 
@@ -71,7 +78,7 @@ This first project will precisely replicate one of the portfolio templates provi
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-### <a href="https://pulgosodog.github.io/Portfolio-template-1/">Live Build</a>
+### <a href="">No live demo available yet</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,7 +109,7 @@ No installation is required for this project.
 
 ### Usage
 
-To run the project, open the *index.html* of the clone repository or go to the <a href="https://pulgosodog.github.io/Portfolio-setup-and-mobile-first/">live demo</a>.
+To run the project, open the *index.html* of the clone repository or go to the <a href="repo.link">live demo</a>.
 
 
 ### Run tests
@@ -167,7 +174,7 @@ I would like to thank my mom, my dad and my siblings.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE.txt) licensed.
+This project is [Creative Commons](./LICENSE.txt) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
