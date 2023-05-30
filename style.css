@@ -161,6 +161,7 @@ section#available-plants hr {
 section#available-plants div#plant-grid {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 5vw;
 }
 section#available-plants div#plant-grid .plant-card {
   display: flex;
