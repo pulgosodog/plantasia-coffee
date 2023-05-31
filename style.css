@@ -144,6 +144,7 @@ section#available-plants {
   align-items: center;
   background-color: white;
   text-align: center;
+  padding-bottom: 10vw;
 }
 section#available-plants h3 {
   font-size: 1.5rem;
@@ -211,4 +212,58 @@ section#available-plants div#plant-grid .plant-card div.plant-card-text p.growin
 }
 section#available-plants div#plant-grid .plant-card div.plant-card-text p.growing span {
   font-weight: 900;
+}
+
+section#partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5vw;
+  background-color: #414246;
+}
+section#partners h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 7vw;
+  color: #FCFCFA;
+  margin: 0;
+}
+section#partners hr {
+  border-top: 0;
+  border: 0.2vw solid #ee523c;
+  width: 10vw;
+  margin: 3vw 0 3vw;
+}
+section#partners div#partners-container {
+  display: flex;
+  flex-direction: column;
+}
+section#partners div#partners-container div.row {
+  display: flex;
+  justify-content: center;
+}
+section#partners div#partners-container div.row img {
+  filter: grayscale(100%);
+  width: 20vw;
+  height: auto;
+  padding: 5%;
+}
+
+section#footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  padding: 5vw 0;
+}
+section#footer img {
+  width: 40%;
+  height: auto;
+  padding: 2%;
+}
+section#footer p {
+  padding: 2%;
+  font-size: 0.7rem;
+  color: #9f9ea2;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
