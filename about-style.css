@@ -2,10 +2,6 @@ body {
   background-color: #f8f8f8;
   font-family: "Lato", sans-serif;
   margin: 0;
-  background-image: url(images/plants-background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 button {
@@ -20,7 +16,6 @@ button {
 
 div.intro-background {
   background-color: #f7f7f7;
-  opacity: 0.95;
 }
 div.intro-background header #hamburguer-button {
   background-image: url(images/menu.png);
@@ -31,6 +26,9 @@ div.intro-background header #hamburguer-button {
   height: 2.5rem;
   margin-left: 5vw;
   margin-top: 3vw;
+}
+div.intro-background section#intro {
+  text-align: center;
 }
 div.intro-background section#intro div {
   margin: 0 3vw;
@@ -48,8 +46,8 @@ div.intro-background section#intro div h1 span {
 }
 div.intro-background section#intro div div.description {
   margin: 0;
-  border: 4px white solid;
-  background-color: #f7f7f7;
+  border: 1px #e8e8e8 solid;
+  background-color: white;
 }
 div.intro-background section#intro div div.description p {
   font-size: 0.8rem;
@@ -58,87 +56,20 @@ div.intro-background section#intro div div.description p {
   margin: 1rem;
   line-height: 1.5rem;
 }
-div.intro-background section#intro div h2 {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #5a5a5a;
-  font-weight: 900;
-  padding: 4vw 0 0;
-  margin: 0;
-}
-div.intro-background section#intro div h4 {
-  color: #5a5a5a;
-  margin: 0;
-  text-align: center;
-  padding-bottom: 13vw;
-}
-
-section#amenities {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #272a31;
-  background-image: url(images/cross.png);
-  background-size: 8vw;
-  background-repeat: repeat;
-}
-section#amenities h3 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  padding-top: 9vw;
-  color: white;
-  margin: 0;
-}
-section#amenities hr {
-  border-top: 0;
-  border: 0.2vw solid #ee523c;
-  width: 10vw;
-  margin: 3vw 0 8vw;
-}
-section#amenities div.card-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2vw;
-}
-section#amenities div.card-container div.amenities-card {
-  width: 92vw;
-  background-color: rgba(128, 128, 128, 0.3);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 3vw;
-}
-section#amenities div.card-container div.amenities-card img {
-  width: 12%;
-  height: 12%;
-  padding: 4.5%;
-}
-section#amenities div.card-container div.amenities-card h4 {
-  font-weight: 700;
-  width: 20%;
-  color: #ee523c;
-  padding: 0 2.5%;
-}
-section#amenities div.card-container div.amenities-card p {
-  width: 50%;
+div.intro-background section#intro div p.contact {
   font-size: 0.8rem;
-  font-weight: 300;
-  color: #fff;
-  padding-right: 5%;
+  font-weight: 600;
+  color: #5a5a5a;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 8vw;
 }
-section#amenities button {
-  margin: 10% 0;
-  width: 70vw;
-  height: 15vw;
-  background-color: #ee523c;
-  color: white;
-}
-section#amenities button a {
+div.intro-background section#intro div p.contact a {
   color: inherit;
-  text-decoration: none;
+  font-weight: 800;
 }
 
-section#available-plants {
+section#logo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,72 +77,99 @@ section#available-plants {
   text-align: center;
   padding-bottom: 10vw;
 }
-section#available-plants h3 {
-  font-size: 1.5rem;
-  font-weight: 400;
+section#logo h3 {
+  width: 70vw;
+  font-size: 1.3rem;
+  font-weight: 700;
   padding-top: 9vw;
   color: #272a31;
   margin: 0;
 }
-section#available-plants hr {
+section#logo hr {
   border-top: 0;
-  border: 0.2vw solid #ee523c;
-  width: 10vw;
-  margin: 3vw 0 8vw;
+  border: 0.2vw solid #FFAEA6;
+  width: 5vw;
+  margin: 3vw 0;
 }
-section#available-plants div#plant-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 5vw;
+section#logo p {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #5a5a5a;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0 8vw 8vw;
 }
-section#available-plants div#plant-grid .plant-card {
-  display: flex;
-  align-items: top;
-  margin: 0 3vw;
-  gap: 10%;
+section#logo div {
+  width: 85vw;
+  margin: 0;
+  border: 1px #e8e8e8 solid;
+  background-color: white;
 }
-section#available-plants div#plant-grid .plant-card div.image-corner {
-  background-image: url(images/image-corner.png);
-  background-position: top left;
-  background-size: 70%;
-  background-repeat: no-repeat;
-  width: 20%;
+section#logo div img {
+  width: 35vw;
   height: auto;
 }
-section#available-plants div#plant-grid .plant-card div.image-corner img {
-  padding: 20% 0 0 20%;
-  width: 100%;
-  border-radius: 1vw;
+
+hr#logo-plans-hr {
+  margin: 0;
+  border: 1px solid #ececec;
 }
-section#available-plants div#plant-grid .plant-card div.plant-card-text {
-  margin-top: 1%;
-  width: 65%;
+
+section#plans {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 10vw;
 }
-section#available-plants div#plant-grid .plant-card div.plant-card-text h4 {
-  margin: 0;
-  color: #272a31;
-}
-section#available-plants div#plant-grid .plant-card div.plant-card-text p {
-  color: #272a31;
-  text-align: left;
-  font-size: 0.65rem;
+section#plans h3 {
+  width: 75vw;
+  font-size: 1.3rem;
   font-weight: 700;
-  margin: 2% 0;
+  padding-top: 9vw;
+  color: #272a31;
+  margin: 0;
 }
-section#available-plants div#plant-grid .plant-card div.plant-card-text hr {
+section#plans hr {
   border-top: 0;
-  border: 0.2vw solid #e3e3e3;
+  border: 0.2vw solid #ffaea6;
   width: 5vw;
-  margin: 2% 0;
+  margin: 3vw 0;
 }
-section#available-plants div#plant-grid .plant-card div.plant-card-text p.growing {
-  color: #ee523c;
+section#plans p.below {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #5a5a5a;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0 8vw 8vw;
 }
-section#available-plants div#plant-grid .plant-card div.plant-card-text p.growing span {
-  font-weight: 900;
+section#plans div#country-container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 3vw;
+}
+section#plans div#country-container h2 {
+  background-color: rgba(238, 82, 60, 0.8);
+  margin: 0;
+  width: 82vw;
+  padding: 15vw 0;
+}
+section#plans div#country-container h2 span {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+section#plans div#country-container div#nicaragua {
+  background-image: url(/images/Nicaragua.JPG);
+  background-size: cover;
+  background-position: bottom;
+}
+section#plans div#country-container div#costa-rica {
+  background-image: url(/images/Costa\ Rica.JPG);
+  background-size: cover;
+  background-position: center;
 }
 
 section#partners {
@@ -266,4 +224,4 @@ section#footer p {
   font-size: 0.7rem;
   color: #9f9ea2;
   font-weight: 700;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=about-style.css.map */
