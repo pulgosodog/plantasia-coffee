@@ -151,11 +151,8 @@ section#footer div p {
 }
 
 section#amenities div.card-container div.amenities-card p {
-  width: 50%;
-  font-size: 0.8rem;
   font-weight: 300;
   color: #fff;
-  padding-right: 5%;
   width: 70%;
   font-size: 1.2rem;
   padding: 0;
@@ -598,6 +595,10 @@ section#footer div p.bottom {
     padding: 1% 0;
   }
 
+  section#footer a img {
+    padding: 0;
+  }
+
   section#amenities div.card-container div.amenities-card img {
     width: 20%;
     height: auto;
@@ -655,10 +656,6 @@ section#footer div p.bottom {
 
   section#available-plants div#plant-grid .plant-card div.image-corner {
     width: 20%;
-  }
-
-  section#footer a img {
-    padding: 0;
   }
 
   section#partners div#partners-container div.row img {
