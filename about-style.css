@@ -30,10 +30,6 @@ div#menu-background {
   display: none;
 }
 
-div#menu-background.active {
-  display: block;
-}
-
 ul#menu-items {
   padding: 0;
   visibility: visible;
@@ -79,6 +75,7 @@ ul#menu-items li a {
 }
 
 div#menu-background.active {
+  display: block;
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -457,6 +454,12 @@ section#footer div p.bottom {
     align-items: center;
   }
 
+  section#footer a {
+    padding-left: 15vw;
+    width: 40vw;
+    height: auto;
+  }
+
   div.intro-background header nav div ul li#about-page a {
     padding: 10%;
     white-space: nowrap;
@@ -492,6 +495,16 @@ section#footer div p.bottom {
     margin: 5% 0.2vw;
   }
 
+  section#logo div img {
+    padding: 2vh 0;
+    height: 25vh;
+    width: auto;
+  }
+
+  section#footer a img {
+    padding: 0;
+  }
+
   div.intro-background section#intro ul li img {
     height: 1rem;
     width: auto;
@@ -505,6 +518,15 @@ section#footer div p.bottom {
     line-height: 2rem;
   }
 
+  section#footer div p {
+    padding: 0;
+    margin: 0.2vh 15vw 0 0;
+    font-size: 1.2rem;
+    color: #9f9ea2;
+    font-weight: 700;
+    max-width: 100%;
+  }
+
   div.intro-background section#intro ul li p {
     margin: 0;
     padding: 0;
@@ -512,6 +534,17 @@ section#footer div p.bottom {
     font-weight: 900;
     color: #5d5d5d;
     white-space: nowrap;
+  }
+
+  section#logo div {
+    margin: 6vh 0;
+    width: 35vw;
+  }
+
+  section#footer div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5vw;
   }
 
   div.intro-background section#intro div {
@@ -527,6 +560,10 @@ section#footer div p.bottom {
     line-height: 4rem;
   }
 
+  section#logo p span {
+    font-size: inherit;
+  }
+  
   div.intro-background section#intro div h1 span {
     font-size: 4rem;
     font-weight: 300;
@@ -537,6 +574,25 @@ section#footer div p.bottom {
     border: 1px solid #ee523c;
     width: 2vw;
     margin: 2vw 0 2vw;
+  }
+
+  section#plans hr {
+    visibility: visible;
+    position: static;
+    border-top: 0;
+    border: 1px solid #ee523c;
+    width: 2vw;
+    margin: 2vw 0 2vw;
+  }
+
+  section#partners hr {
+    visibility: hidden;
+    position: static;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
   }
 
   div.intro-background section#intro div hr {
@@ -577,21 +633,6 @@ section#footer div p.bottom {
     padding-top: 4vw;
   }
 
-  section#logo p span {
-    font-size: inherit;
-  }
-
-  section#logo div {
-    margin: 6vh 0;
-    width: 35vw;
-  }
-
-  section#logo div img {
-    padding: 2vh 0;
-    height: 25vh;
-    width: auto;
-  }
-
   section#plans {
     padding: 0;
   }
@@ -600,15 +641,6 @@ section#footer div p.bottom {
     font-size: 2.5rem;
     font-weight: 400;
     padding-top: 4vw;
-  }
-
-  section#plans hr {
-    visibility: visible;
-    position: static;
-    border-top: 0;
-    border: 1px solid #ee523c;
-    width: 2vw;
-    margin: 2vw 0 2vw;
   }
 
   section#plans p.below {
@@ -656,16 +688,6 @@ section#footer div p.bottom {
     margin: 0;
   }
 
-  section#partners hr {
-    visibility: hidden;
-    position: static;
-    width: 0;
-    height: 0;
-    font-size: 0;
-    padding: 0;
-    margin: 0;
-  }
-
   section#partners div#partners-container {
     visibility: hidden;
     position: static;
@@ -700,31 +722,6 @@ section#footer div p.bottom {
     justify-content: flex-start;
     padding: 2vw 0;
     background-color: #272a31;
-  }
-
-  section#footer a {
-    padding-left: 15vw;
-    width: 40vw;
-    height: auto;
-  }
-
-  section#footer a img {
-    padding: 0;
-  }
-
-  section#footer div {
-    display: flex;
-    flex-direction: column;
-    padding-right: 5vw;
-  }
-
-  section#footer div p {
-    padding: 0;
-    margin: 0.2vh 15vw 0 0;
-    font-size: 1.2rem;
-    color: #9f9ea2;
-    font-weight: 700;
-    max-width: 100%;
   }
 
   section#footer div p.bottom {
