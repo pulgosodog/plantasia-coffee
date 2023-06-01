@@ -161,7 +161,7 @@ If you like this project you can clone it and feel free to improve it by making 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank my mom, my dad and my siblings.
+I would like to thank <a href="https://www.behance.net/adagio07">Cindy Shin</a> for the design used as inspiration.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
