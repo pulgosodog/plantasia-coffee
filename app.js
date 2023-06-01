@@ -84,34 +84,15 @@ var menuOpen = false;
 
 
 hamburguerButton.addEventListener("click", () => {
-    if (menuOpen === false) {
-        menuItems.classList.add('active');
-        menuBackground.classList.add('active');
-        quitButton.style.position = 'absolute';
-        quitButton.style.backgroundSize = 'cover';
-        quitButton.style.backgroundPosition = 'center';
-        quitButton.style.top = '16.27vw';
-        quitButton.style.right = '9.87vw';
-        quitButton.style.height = '3.73vw';
-        quitButton.style.width = '4vw';
-        quitButton.style.zIndex = '1';
-    }
+    menuBackground.classList.add('active');
+})
 
 quitButton.addEventListener("click", () => {
-        menuItems.classList.remove('active');
-        menuBackground.classList.remove('active');
 
-        quitButton.style.backgroundImage = '';
-        quitButton.style.position = '';
-        quitButton.style.backgroundSize = '';
-        quitButton.style.backgroundPosition = '';
-        quitButton.style.top = '';
-        quitButton.style.right = '';
-        quitButton.style.height = '';
-        quitButton.style.width = '';
-        quitButton.style.zIndex = '';
-    });
+    menuBackground.classList.remove('active');
+
 });
+
 
 
 

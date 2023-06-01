@@ -16,19 +16,25 @@ button {
 
 button#quit {
   background-image: url("/images/quit-icon.png");
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  top: 16.27vw;
+  right: 9.87vw;
+  height: 3.73vw;
+  width: 4vw;
+  z-index: 1;
 }
 
 div#menu-background {
-  width: 0;
-  height: 0;
+  display: none;
+}
+
+div#menu-background.active {
+  display: block;
 }
 
 ul#menu-items {
-  visibility: hidden;
-  position: absolute;
-}
-
-ul#menu-items.active {
   padding: 0;
   visibility: visible;
   position: fixed;
@@ -41,15 +47,15 @@ ul#menu-items.active {
   align-items: center;
   gap: 10vw;
 }
-ul#menu-items.active li {
+ul#menu-items li {
   display: flex;
   justify-content: center;
   width: 80vw;
 }
-ul#menu-items.active li img {
+ul#menu-items li img {
   height: 30vw;
 }
-ul#menu-items.active li a {
+ul#menu-items li a {
   white-space: nowrap;
   font-weight: 600;
   font-size: 8.53vw;
