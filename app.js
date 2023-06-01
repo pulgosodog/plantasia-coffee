@@ -49,9 +49,9 @@ const anthurium = new PlantsConstructor(
 
 const plants = [aloe, asparagusFern, peaceLily, peperomia, dieffenbachia, anthurium];
 
-function plantCardMaker(plant) {
+function plantCardMaker(plant){
 
-    let htmlTemplate = `
+  const htmlTemplate = `
           <div class="plant-card">
           <div class="image-corner"><img src="${plant.image}" alt="${plant.name} image"></div>
           <div class="plant-card-text">
@@ -63,44 +63,33 @@ function plantCardMaker(plant) {
       </div>
           `;
 
-    return htmlTemplate;
+  return htmlTemplate;
 }
 
-var plantGrid = document.getElementById("plant-grid");
+const plantGrid = document.getElementById('plant-grid');
 
 document.addEventListener('DOMContentLoaded', () => {
-    plants.forEach((n) => {
-        plantGrid.innerHTML += plantCardMaker(n);
-    });
-
+  plants.forEach((n) => {
+  plantGrid.innerHTML += plantCardMaker(n);
+  });
 });
 
 // POP UP MOBILE MENU
-var menuBackground = document.querySelector("#menu-background");
-var hamburguerButton = document.querySelector("#hamburguer-button");
-var quitButton = document.querySelector("#quit");
-var menuItems = document.querySelector("#menu-items");
-var phoneMenuLinks = document.querySelectorAll("#menu-items li a")
-var menuOpen = false;
+const menuBackground = document.querySelector('#menu-background');
+const hamburguerButton = document.querySelector('#hamburguer-button');
+const quitButton = document.querySelector('#quit');
+const phoneMenuLinks = document.querySelectorAll('#menu-items li a');
 
-
-hamburguerButton.addEventListener("click", () => {
-    menuBackground.classList.add('active');
-})
-
-quitButton.addEventListener("click", () => {
-
-    menuBackground.classList.remove('active');
-
+hamburguerButton.addEventListener('click', () => {
+  menuBackground.classList.add('active');
 });
 
-
-
+quitButton.addEventListener('click', () => {
+  menuBackground.classList.remove('active');
+});
 
 phoneMenuLinks.forEach((u) => {
-    u.addEventListener("click", () => {
-        menuItems.classList.remove('active');
-        menuBackground.classList.remove('active');
-        menuOpen = false;
-    })
-})
+  u.addEventListener('click', () => {
+    menuBackground.classList.remove('active');
+  });
+});
