@@ -347,6 +347,33 @@ section#footer div p.bottom {
     flex-direction: column;
     align-items: center;
   }
+  div.intro-background section#intro ul {
+    align-self: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0.1vw 11vw 0 0;
+  }
+  div.intro-background section#intro ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 5% 0.2vw;
+  }
+  div.intro-background section#intro ul li img {
+    height: 1rem;
+    width: auto;
+  }
+  div.intro-background section#intro ul li p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #5d5d5d;
+    white-space: nowrap;
+  }
   div.intro-background section#intro div {
     display: flex;
     flex-direction: column;
