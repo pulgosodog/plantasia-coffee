@@ -54,8 +54,19 @@ ul#menu-items li {
   width: 80vw;
 }
 
+div.intro-background nav img {
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
 ul#menu-items li img {
   height: 30vw;
+}
+
+section#footer a {
+  text-align: center;
 }
 
 ul#menu-items li a {
@@ -71,8 +82,8 @@ div#menu-background.active {
   height: 100vh;
   width: 100vw;
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   background-color: rgba(219, 80, 55, 0.8);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -94,13 +105,6 @@ div.intro-background nav #hamburguer-button {
   margin-top: 3vw;
 }
 
-div.intro-background nav img {
-  visibility: hidden;
-  position: absolute;
-  width: 0;
-  height: 0;
-}
-
 div.intro-background nav ul {
   visibility: hidden;
   position: absolute;
@@ -115,6 +119,13 @@ div.intro-background section#intro ul {
   position: absolute;
 }
 
+section#logo div {
+  width: 85vw;
+  margin: 0;
+  border: 1px #e8e8e8 solid;
+  background-color: white;
+}
+
 div.intro-background section#intro div {
   margin: 0 3vw;
 }
@@ -127,9 +138,34 @@ div.intro-background section#intro div h1 {
   mix-blend-mode: multiply;
 }
 
+section#logo p span {
+  font-size: 0;
+}
+
 div.intro-background section#intro div h1 span {
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+section#logo hr {
+  border-top: 0;
+  border: 0.2vw solid #ffaaa6;
+  width: 5vw;
+  margin: 3vw 0;
+}
+
+section#plans hr {
+  border-top: 0;
+  border: 0.2vw solid #ffaea6;
+  width: 5vw;
+  margin: 3vw 0;
+}
+
+section#partners hr {
+  border-top: 0;
+  border: 0.2vw solid #ee523c;
+  width: 10vw;
+  margin: 3vw 0 3vw;
 }
 
 div.intro-background section#intro div hr {
@@ -143,6 +179,23 @@ div.intro-background section#intro div div.description {
   margin: 0;
   border: 1px #e8e8e8 solid;
   background-color: white;
+}
+
+section#logo p {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #5a5a5a;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0 8vw 8vw;
+}
+
+section#footer div p {
+  padding: 2%;
+  font-size: 0.7rem;
+  color: #9f9ea2;
+  font-weight: 700;
+  max-width: 34ch;
 }
 
 div.intro-background section#intro div div.description p {
@@ -189,33 +242,6 @@ section#logo h3 {
   margin: 0;
 }
 
-section#logo hr {
-  border-top: 0;
-  border: 0.2vw solid #FFAEA6;
-  width: 5vw;
-  margin: 3vw 0;
-}
-
-section#logo p {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: #5a5a5a;
-  line-height: 1.5rem;
-  margin: 0;
-  padding: 0 8vw 8vw;
-}
-
-section#logo p span {
-  font-size: 0;
-}
-
-section#logo div {
-  width: 85vw;
-  margin: 0;
-  border: 1px #e8e8e8 solid;
-  background-color: white;
-}
-
 section#logo div img {
   width: 35vw;
   height: auto;
@@ -242,13 +268,6 @@ section#plans h3 {
   padding-top: 9vw;
   color: #272a31;
   margin: 0;
-}
-
-section#plans hr {
-  border-top: 0;
-  border: 0.2vw solid #ffaea6;
-  width: 5vw;
-  margin: 3vw 0;
 }
 
 section#plans p.below {
@@ -303,15 +322,8 @@ section#partners h3 {
   font-size: 1.5rem;
   font-weight: 400;
   padding-top: 7vw;
-  color: #FCFCFA;
+  color: #fcfcfa;
   margin: 0;
-}
-
-section#partners hr {
-  border-top: 0;
-  border: 0.2vw solid #ee523c;
-  width: 10vw;
-  margin: 3vw 0 3vw;
 }
 
 section#partners div#partners-container {
@@ -322,6 +334,11 @@ section#partners div#partners-container {
 section#partners div#partners-container div.row {
   display: flex;
   justify-content: center;
+}
+
+section#footer a img {
+  width: 75%;
+  height: auto;
 }
 
 section#partners div#partners-container div.row img {
@@ -337,23 +354,6 @@ section#footer {
   align-items: center;
   background-color: white;
   padding: 5vw 5vw;
-}
-
-section#footer a {
-  text-align: center;
-}
-
-section#footer a img {
-  width: 75%;
-  height: auto;
-}
-
-section#footer div p {
-  padding: 2%;
-  font-size: 0.7rem;
-  color: #9f9ea2;
-  font-weight: 700;
-  max-width: 34ch;
 }
 
 section#footer div p.bottom {
@@ -390,10 +390,29 @@ section#footer div p.bottom {
     background-color: #3e3e3e;
   }
 
+  div.intro-background header nav div ul {
+    visibility: visible;
+    position: static;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 0;
+  }
+
   div.intro-background header nav div.top ul {
     visibility: visible;
     position: static;
     padding: 0.1vw 0;
+  }
+
+  div.intro-background header nav div ul li {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #5a5a5a;
+    margin: 0.5vw 2vw;
   }
 
   div.intro-background header nav div.top ul li {
@@ -401,6 +420,13 @@ section#footer div p.bottom {
     font-weight: 400;
     color: white;
     margin: 0 0.5vw;
+  }
+
+  div.intro-background header nav div img {
+    visibility: visible;
+    position: static;
+    height: 90%;
+    width: auto;
   }
 
   div.intro-background header nav div.top ul li a img {
@@ -419,32 +445,6 @@ section#footer div p.bottom {
   div.intro-background header nav div #hamburguer-button {
     visibility: hidden;
     position: absolute;
-  }
-
-  div.intro-background header nav div img {
-    visibility: visible;
-    position: static;
-    height: 90%;
-    width: auto;
-  }
-
-  div.intro-background header nav div ul {
-    visibility: visible;
-    position: static;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    margin: 0;
-  }
-
-  div.intro-background header nav div ul li {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #5a5a5a;
-    margin: 0.5vw 2vw;
   }
 
   div.intro-background header nav div ul li a {
@@ -497,6 +497,14 @@ section#footer div p.bottom {
     width: auto;
   }
 
+  section#logo p {
+    width: 45vw;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
   div.intro-background section#intro ul li p {
     margin: 0;
     padding: 0;
@@ -517,12 +525,18 @@ section#footer div p.bottom {
     margin: 0 0 1vw;
     font-size: 5rem;
     line-height: 4rem;
-    margin: 0;
   }
 
   div.intro-background section#intro div h1 span {
     font-size: 4rem;
     font-weight: 300;
+  }
+
+  section#logo hr {
+    border-top: 0;
+    border: 1px solid #ee523c;
+    width: 2vw;
+    margin: 2vw 0 2vw;
   }
 
   div.intro-background section#intro div hr {
@@ -561,21 +575,6 @@ section#footer div p.bottom {
     font-size: 2.5rem;
     font-weight: 400;
     padding-top: 4vw;
-  }
-
-  section#logo hr {
-    border-top: 0;
-    border: 1px solid #ee523c;
-    width: 2vw;
-    margin: 2vw 0 2vw;
-  }
-
-  section#logo p {
-    width: 45vw;
-    padding: 0;
-    margin: 0;
-    font-size: 1.2rem;
-    line-height: 2rem;
   }
 
   section#logo p span {
