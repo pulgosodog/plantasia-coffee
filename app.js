@@ -49,20 +49,18 @@ const anthurium = new PlantsConstructor(
 
 const plants = [aloe, asparagusFern, peaceLily, peperomia, dieffenbachia, anthurium];
 
-function plantCardMaker(plant){
-
+function plantCardMaker(plant) {
   const htmlTemplate = `
-          <div class="plant-card">
-          <div class="image-corner"><img src="${plant.image}" alt="${plant.name} image"></div>
-          <div class="plant-card-text">
-              <h4>${plant.name}</h4>
-              <p class="growing"><span>Growing conditions:</span> ${plant.growing}</p>
-              <hr>
-              <p class="description"> ${plant.description}</p>
-          </div>
-      </div>
-          `;
-
+  <div class="plant-card">
+    <div class="image-corner"><img src="${plant.image}" alt="${plant.name} image"></div>
+    <div class="plant-card-text">
+      <h4>${plant.name}</h4>
+      <p class="growing"><span>Growing conditions:</span> ${plant.growing}</p>
+      <hr>
+      <p class="description"> ${plant.description}</p>
+    </div>
+  </div>
+  `;
   return htmlTemplate;
 }
 
