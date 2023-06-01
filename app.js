@@ -68,7 +68,7 @@ const plantGrid = document.getElementById('plant-grid');
 
 document.addEventListener('DOMContentLoaded', () => {
   plants.forEach((n) => {
-  plantGrid.innerHTML += plantCardMaker(n);
+    plantGrid.innerHTML += plantCardMaker(n);
   });
 });
 
