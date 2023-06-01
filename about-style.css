@@ -40,6 +40,10 @@ div.intro-background nav ul {
 div.intro-background section#intro {
   text-align: center;
 }
+div.intro-background section#intro ul {
+  visibility: hidden;
+  position: absolute;
+}
 div.intro-background section#intro div {
   margin: 0 3vw;
 }
@@ -257,10 +261,13 @@ section#footer div p.bottom {
 }
 
 @media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
   div.intro-background {
     background-color: #f7f7f7;
     opacity: 0.95;
-    height: 100vh;
   }
   div.intro-background header {
     opacity: 1;
@@ -348,6 +355,8 @@ section#footer div p.bottom {
     align-items: center;
   }
   div.intro-background section#intro ul {
+    visibility: visible;
+    position: static;
     align-self: end;
     display: flex;
     flex-direction: row;
@@ -380,7 +389,7 @@ section#footer div p.bottom {
     align-items: center;
   }
   div.intro-background section#intro div h1 {
-    padding-top: 10vh;
+    padding-top: 11vh;
     margin: 0 0 1vw;
     font-size: 5rem;
     line-height: 4rem;
@@ -410,7 +419,7 @@ section#footer div p.bottom {
     font-size: inherit;
   }
   div.intro-background section#intro div p.contact {
-    padding: 4vw 0 0;
+    padding: 4vw 0 10vw;
     font-size: 1.2rem;
   }
   section#logo {
