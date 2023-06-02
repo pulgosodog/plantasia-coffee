@@ -1,0 +1,736 @@
+body {
+  background-color: #f8f8f8;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+button#quit {
+  background-image: url("/images/quit-icon.png");
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  top: 16.27vw;
+  right: 9.87vw;
+  height: 3.73vw;
+  width: 4vw;
+  z-index: 1;
+}
+
+div#menu-background {
+  display: none;
+}
+
+ul#menu-items {
+  padding: 0;
+  visibility: visible;
+  position: fixed;
+  top: 2vw;
+  left: 0;
+  right: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10vw;
+}
+
+ul#menu-items li {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+}
+
+div.intro-background nav img {
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+ul#menu-items li img {
+  height: 30vw;
+}
+
+section#footer a {
+  text-align: center;
+}
+
+ul#menu-items li a {
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 8.53vw;
+  line-height: 11.73vw;
+  color: white;
+  text-decoration: none;
+}
+
+div#menu-background.active {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(219, 80, 55, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+div.intro-background {
+  background-color: #f7f7f7;
+}
+
+div.intro-background nav #hamburguer-button {
+  background-image: url(images/menu.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 5vw;
+  margin-top: 3vw;
+}
+
+div.intro-background nav ul {
+  visibility: hidden;
+  position: absolute;
+}
+
+div.intro-background section#intro {
+  text-align: center;
+}
+
+div.intro-background section#intro ul {
+  visibility: hidden;
+  position: absolute;
+}
+
+section#logo div {
+  width: 85vw;
+  margin: 0;
+  border: 1px #e8e8e8 solid;
+  background-color: white;
+}
+
+div.intro-background section#intro div {
+  margin: 0 3vw;
+}
+
+div.intro-background section#intro div h1 {
+  margin: 0 0 5vw;
+  color: #ee523c;
+  font-weight: 900;
+  font-size: 3rem;
+  mix-blend-mode: multiply;
+}
+
+section#logo p span {
+  font-size: 0;
+}
+
+div.intro-background section#intro div h1 span {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+section#logo hr {
+  border-top: 0;
+  border: 0.2vw solid #ffaaa6;
+  width: 5vw;
+  margin: 3vw 0;
+}
+
+section#plans hr {
+  border-top: 0;
+  border: 0.2vw solid #ffaea6;
+  width: 5vw;
+  margin: 3vw 0;
+}
+
+section#partners hr {
+  border-top: 0;
+  border: 0.2vw solid #ee523c;
+  width: 10vw;
+  margin: 3vw 0 3vw;
+}
+
+div.intro-background section#intro div hr {
+  visibility: hidden;
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+div.intro-background section#intro div div.description {
+  margin: 0;
+  border: 1px #e8e8e8 solid;
+  background-color: white;
+}
+
+section#logo p {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #5a5a5a;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0 8vw 8vw;
+}
+
+section#footer div p {
+  padding: 2%;
+  font-size: 0.7rem;
+  color: #9f9ea2;
+  font-weight: 700;
+  max-width: 34ch;
+}
+
+div.intro-background section#intro div div.description p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #5a5a5a;
+  margin: 1rem;
+  line-height: 1.5rem;
+}
+
+div.intro-background section#intro div div.description p span {
+  font-size: 0;
+}
+
+div.intro-background section#intro div p.contact {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #5a5a5a;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 8vw;
+}
+
+div.intro-background section#intro div p.contact a {
+  color: inherit;
+  font-weight: 800;
+}
+
+section#logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 10vw;
+}
+
+section#logo h3 {
+  width: 70vw;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding-top: 9vw;
+  color: #272a31;
+  margin: 0;
+}
+
+section#logo div img {
+  width: 35vw;
+  height: auto;
+}
+
+hr#logo-plans-hr {
+  margin: 0;
+  border: 1px solid #ececec;
+}
+
+section#plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 10vw;
+}
+
+section#plans h3 {
+  width: 75vw;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding-top: 9vw;
+  color: #272a31;
+  margin: 0;
+}
+
+section#plans p.below {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #5a5a5a;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0 8vw 8vw;
+}
+
+section#plans div#country-container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 3vw;
+}
+
+section#plans div#country-container h2 {
+  background-color: rgba(238, 82, 60, 0.8);
+  margin: 0;
+  width: 82vw;
+  padding: 15vw 0;
+}
+
+section#plans div#country-container h2 span {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+section#plans div#country-container div#nicaragua {
+  background-image: url(../images/Nicaragua.JPG);
+  background-size: cover;
+  background-position: bottom;
+}
+
+section#plans div#country-container div#costa-rica {
+  background-image: url(../images/Costa\ Rica.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+section#partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5vw;
+  background-color: #414246;
+}
+
+section#partners h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 7vw;
+  color: #fcfcfa;
+  margin: 0;
+}
+
+section#partners div#partners-container {
+  display: flex;
+  flex-direction: column;
+}
+
+section#partners div#partners-container div.row {
+  display: flex;
+  justify-content: center;
+}
+
+section#footer a img {
+  width: 75%;
+  height: auto;
+}
+
+section#partners div#partners-container div.row img {
+  filter: grayscale(100%);
+  width: 20vw;
+  height: auto;
+  padding: 5%;
+}
+
+section#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 5vw 5vw;
+}
+
+section#footer div p.bottom {
+  visibility: hidden;
+  position: absolute;
+  font-size: 0;
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.intro-background {
+    background-color: #f7f7f7;
+    opacity: 0.95;
+  }
+
+  div.intro-background header {
+    opacity: 1;
+    background-color: white;
+  }
+
+  div.intro-background header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  div.intro-background header nav div.top {
+    padding: 0 10.5%;
+    justify-content: flex-end;
+    background-color: #3e3e3e;
+  }
+
+  div.intro-background header nav div ul {
+    visibility: visible;
+    position: static;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  div.intro-background header nav div.top ul {
+    visibility: visible;
+    position: static;
+    padding: 0.1vw 0;
+  }
+
+  div.intro-background header nav div ul li {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #5a5a5a;
+    margin: 0.5vw 2vw;
+  }
+
+  div.intro-background header nav div.top ul li {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: white;
+    margin: 0 0.5vw;
+  }
+
+  div.intro-background header nav div img {
+    visibility: visible;
+    position: static;
+    height: 90%;
+    width: auto;
+  }
+
+  div.intro-background header nav div.top ul li a img {
+    visibility: visible;
+    position: static;
+    height: 1.2rem;
+    width: auto;
+  }
+
+  div.intro-background header nav div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+  }
+
+  div.intro-background header nav div #hamburguer-button {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  div.intro-background header nav div ul li a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  div.intro-background header nav div ul li#about-page {
+    display: flex;
+    align-items: center;
+  }
+
+  section#footer a {
+    padding-left: 15vw;
+    width: 40vw;
+    height: auto;
+  }
+
+  div.intro-background header nav div ul li#about-page a {
+    padding: 10%;
+    white-space: nowrap;
+    border: 3px solid #ee523c;
+    height: 100%;
+    width: 100%;
+    color: #ee523c;
+    font-size: 90%;
+  }
+
+  div.intro-background section#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.intro-background section#intro ul {
+    visibility: visible;
+    position: static;
+    align-self: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0.1vw 11vw 0 0;
+  }
+
+  div.intro-background section#intro ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 5% 0.2vw;
+  }
+
+  section#logo div img {
+    padding: 2vh 0;
+    height: 25vh;
+    width: auto;
+  }
+
+  section#footer a img {
+    padding: 0;
+  }
+
+  div.intro-background section#intro ul li img {
+    height: 1rem;
+    width: auto;
+  }
+
+  section#logo p {
+    width: 45vw;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  section#footer div p {
+    padding: 0;
+    margin: 0.2vh 15vw 0 0;
+    font-size: 1.2rem;
+    color: #9f9ea2;
+    font-weight: 700;
+    max-width: 100%;
+  }
+
+  div.intro-background section#intro ul li p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #5d5d5d;
+    white-space: nowrap;
+  }
+
+  section#logo div {
+    margin: 6vh 0;
+    width: 35vw;
+  }
+
+  section#footer div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5vw;
+  }
+
+  div.intro-background section#intro div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.intro-background section#intro div h1 {
+    padding-top: 11vh;
+    margin: 0 0 1vw;
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+
+  section#logo p span {
+    font-size: inherit;
+  }
+
+  div.intro-background section#intro div h1 span {
+    font-size: 4rem;
+    font-weight: 300;
+  }
+
+  section#logo hr {
+    border-top: 0;
+    border: 1px solid #ee523c;
+    width: 2vw;
+    margin: 2vw 0 2vw;
+  }
+
+  section#plans hr {
+    visibility: visible;
+    position: static;
+    border-top: 0;
+    border: 1px solid #ee523c;
+    width: 2vw;
+    margin: 2vw 0 2vw;
+  }
+
+  section#partners hr {
+    visibility: hidden;
+    position: static;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  div.intro-background section#intro div hr {
+    visibility: visible;
+    position: static;
+    border-top: 0;
+    border: 1px solid #ee523c;
+    width: 2vw;
+    margin: 2vw 0 2vw;
+  }
+
+  div.intro-background section#intro div div.description {
+    width: 60vw;
+  }
+
+  div.intro-background section#intro div div.description p {
+    font-size: 1.2rem;
+    margin: 2rem;
+    line-height: 2rem;
+  }
+
+  div.intro-background section#intro div div.description p span {
+    font-size: inherit;
+  }
+
+  div.intro-background section#intro div p.contact {
+    padding: 4vw 0 10vw;
+    font-size: 1.2rem;
+  }
+
+  section#logo {
+    padding: 0;
+  }
+
+  section#logo h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-top: 4vw;
+  }
+
+  section#plans {
+    padding: 0;
+  }
+
+  section#plans h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-top: 4vw;
+  }
+
+  section#plans p.below {
+    width: 45vw;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  section#plans div#country-container {
+    padding: 8vh 0 15vh;
+    flex-direction: row;
+    gap: 2vw;
+  }
+
+  section#plans div#country-container div h2 {
+    font-size: 3rem;
+    width: 30vw;
+    padding: 6vw 0;
+    line-height: 3rem;
+  }
+
+  section#plans div#country-container div h2 span {
+    font-size: 1.2rem;
+  }
+
+  section#partners {
+    visibility: hidden;
+    position: static;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  section#partners h3 {
+    visibility: hidden;
+    position: static;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  section#partners div#partners-container {
+    visibility: hidden;
+    position: static;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  section#partners div#partners-container div.row {
+    visibility: hidden;
+    position: static;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  section#partners div#partners-container div.row img {
+    visibility: hidden;
+    position: static;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  section#footer {
+    justify-content: flex-start;
+    padding: 2vw 0;
+    background-color: #272a31;
+  }
+
+  section#footer div p.bottom {
+    padding: 0.2vh 0;
+    visibility: visible;
+    position: static;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=about-style.css.map */

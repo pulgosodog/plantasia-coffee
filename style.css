@@ -1,0 +1,759 @@
+body {
+  background-color: #f8f8f8;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  background-image: url(images/plants-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+div#menu-background.active {
+  display: block;
+}
+
+button#quit {
+  background-image: url("images/quit-icon.png");
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  top: 16.27vw;
+  right: 9.87vw;
+  height: 3.73vw;
+  width: 4vw;
+  z-index: 1;
+}
+
+ul#menu-items {
+  padding: 0;
+  position: fixed;
+  top: 2vw;
+  left: 0;
+  right: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10vw;
+}
+
+ul#menu-items li {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+}
+
+header nav img {
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+ul#menu-items li img {
+  height: 30vw;
+}
+
+section#footer a {
+  padding-left: 15vw;
+  width: 40vw;
+  height: auto;
+  text-align: center;
+}
+
+ul#menu-items li a {
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 8.53vw;
+  line-height: 11.73vw;
+  color: white;
+  text-decoration: none;
+}
+
+div#menu-background {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(219, 80, 55, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+header {
+  background-color: #f7f7f7;
+  opacity: 0.95;
+}
+
+header nav #hamburguer-button {
+  background-image: url(images/menu.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 5vw;
+  margin-top: 3vw;
+}
+
+header nav ul {
+  visibility: hidden;
+  position: absolute;
+}
+
+div.intro-background {
+  background-color: #f7f7f7;
+  opacity: 0.95;
+}
+
+div.intro-background section#intro div {
+  margin: 0 3vw;
+}
+
+div.intro-background section#intro div h1 {
+  margin: 0 0 5vw;
+  color: #ee523c;
+  font-weight: 900;
+  font-size: 3rem;
+  mix-blend-mode: multiply;
+}
+
+div.intro-background section#intro div h1 span {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+div.intro-background section#intro div div.description {
+  margin: 0;
+  border: 4px white solid;
+  background-color: #f7f7f7;
+}
+
+section#footer div p {
+  padding: 2%;
+  font-size: 0.7rem;
+  color: #9f9ea2;
+  font-weight: 700;
+  max-width: 34ch;
+}
+
+section#amenities div.card-container div.amenities-card p {
+  font-weight: 300;
+  color: #fff;
+  width: 70%;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+div.intro-background section#intro div div.description p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #5a5a5a;
+  margin: 1rem;
+  line-height: 1.5rem;
+}
+
+div.intro-background section#intro div h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #5a5a5a;
+  font-weight: 900;
+  padding: 4vw 0 0;
+  margin: 0;
+}
+
+div.intro-background section#intro div h4 {
+  color: #5a5a5a;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 13vw;
+}
+
+section#amenities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #272a31;
+  background-image: url(images/cross.png);
+  background-size: 8vw;
+  background-repeat: repeat;
+}
+
+section#amenities h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 9vw;
+  color: white;
+  margin: 0;
+}
+
+section#amenities hr {
+  border-top: 0;
+  border: 0.2vw solid #ee523c;
+  width: 10vw;
+  margin: 3vw 0 8vw;
+}
+
+section#amenities div.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+section#amenities div.card-container div.amenities-card {
+  width: 92vw;
+  background-color: rgba(128, 128, 128, 0.3);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 3vw;
+}
+
+section#footer a img {
+  width: 75%;
+  height: auto;
+}
+
+section#amenities div.card-container div.amenities-card img {
+  width: 12%;
+  height: 12%;
+  padding: 4.5%;
+}
+
+section#amenities div.card-container div.amenities-card h4 {
+  font-weight: 700;
+  width: 20%;
+  color: #ee523c;
+  padding: 0 2.5%;
+}
+
+section#amenities button {
+  margin: 10% 0;
+  width: 70vw;
+  height: 15vw;
+  background-color: #ee523c;
+  color: white;
+}
+
+section#amenities button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section#available-plants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 10vw;
+}
+
+section#available-plants h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 9vw;
+  color: #272a31;
+  margin: 0;
+}
+
+section#available-plants hr {
+  border-top: 0;
+  border: 0.2vw solid #ee523c;
+  width: 10vw;
+  margin: 3vw 0 8vw;
+}
+
+section#available-plants div#plant-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5vw;
+}
+
+section#available-plants div#plant-grid .plant-card {
+  display: flex;
+  margin: 0 3vw;
+  gap: 10%;
+}
+
+section#available-plants div#plant-grid .plant-card div.image-corner {
+  background-image: url(images/image-corner.png);
+  background-position: top left;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  width: 20%;
+  height: auto;
+}
+
+section#partners div#partners-container div.row img {
+  filter: grayscale(100%);
+  width: 20vw;
+  height: auto;
+  padding: 5%;
+}
+
+section#available-plants div#plant-grid .plant-card div.image-corner img {
+  padding: 20% 0 0 20%;
+  width: 100%;
+  border-radius: 1vw;
+}
+
+section#available-plants div#plant-grid .plant-card div.plant-card-text {
+  margin-top: 1%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+section#available-plants div#plant-grid .plant-card div.plant-card-text h4 {
+  margin: 0;
+  color: #272a31;
+}
+
+section#available-plants div#plant-grid .plant-card div.plant-card-text p {
+  color: #272a31;
+  text-align: left;
+  font-size: 0.65rem;
+  font-weight: 700;
+  margin: 2% 0;
+}
+
+section#partners hr {
+  border-top: 0;
+  border: 0.2vw solid #ee523c;
+  width: 10vw;
+  margin: 3vw 0 3vw;
+}
+
+section#available-plants div#plant-grid .plant-card div.plant-card-text hr {
+  border-top: 0;
+  border: 0.2vw solid #e3e3e3;
+  width: 5vw;
+  margin: 2% 0;
+}
+
+section#available-plants div#plant-grid .plant-card div.plant-card-text p.growing {
+  color: #ee523c;
+}
+
+section#available-plants div#plant-grid .plant-card div.plant-card-text p.growing span {
+  font-weight: 900;
+}
+
+section#partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5vw;
+  background-color: #414246;
+}
+
+section#partners h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 7vw;
+  color: #fcfcfa;
+  margin: 0;
+}
+
+section#partners div#partners-container {
+  display: flex;
+  flex-direction: column;
+}
+
+section#partners div#partners-container div.row {
+  display: flex;
+  justify-content: center;
+}
+
+section#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 5vw 5vw;
+}
+
+section#footer div p.bottom {
+  visibility: hidden;
+  position: absolute;
+  font-size: 0;
+}
+
+@media (min-width: 768px) {
+  header {
+    opacity: 1;
+    background-color: white;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  header nav div.top {
+    padding: 0 10.5%;
+    justify-content: flex-end;
+    background-color: #3e3e3e;
+  }
+
+  header nav div ul {
+    visibility: visible;
+    position: static;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  header nav div.top ul {
+    padding: 0.1vw 0;
+  }
+
+  header nav div ul li {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #5a5a5a;
+    margin: 0.5vw 2vw;
+  }
+
+  header nav div.top ul li {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: white;
+    margin: 0 0.5vw;
+  }
+
+  header nav div img {
+    visibility: visible;
+    position: static;
+    height: 90%;
+    width: auto;
+  }
+
+  header nav div.top ul li img {
+    height: 1.2rem;
+    width: auto;
+  }
+
+  header nav div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+  }
+
+  header nav div #hamburguer-button {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  header nav div ul li a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  header nav div ul li#about-page {
+    display: flex;
+    align-items: center;
+  }
+
+  section#amenities button a {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: inherit;
+    white-space: nowrap;
+    border-style: none none solid;
+  }
+
+  header nav div ul li#about-page a {
+    padding: 10%;
+    white-space: nowrap;
+    border: 3px solid #ee523c;
+    height: 100%;
+    width: 100%;
+    color: #ee523c;
+    font-size: 90%;
+  }
+
+  div.intro-background {
+    background-color: #f7f7f7;
+    opacity: 0.95;
+    padding-bottom: 10vw;
+  }
+
+  section#footer div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5vw;
+  }
+
+  div.intro-background section#intro div {
+    margin: 0 20vw;
+  }
+
+  div.intro-background section#intro div h1 {
+    padding-top: 5vh;
+    margin: 0 0 1vw;
+    font-size: 8rem;
+    line-height: 7.8rem;
+  }
+
+  div.intro-background section#intro div h1 span {
+    font-size: 4rem;
+    font-weight: 300;
+  }
+
+  div.intro-background section#intro div div.description {
+    width: 38vw;
+  }
+
+  section#footer div p {
+    padding: 0;
+    margin: 0.2vh 15vw 0 0;
+    font-size: 1.2rem;
+    color: #9f9ea2;
+    font-weight: 700;
+    max-width: 100%;
+  }
+
+  div.intro-background section#intro div div.description p {
+    font-size: 1.2rem;
+    margin: 2rem;
+    line-height: 2rem;
+  }
+
+  div.intro-background section#intro div h2 {
+    text-align: start;
+    font-size: 3.2rem;
+    padding: 2vw 0 1vw;
+  }
+
+  div.intro-background section#intro div h4 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: start;
+    padding-bottom: 0;
+  }
+
+  section#amenities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #272a31;
+    background-size: 2vw;
+  }
+
+  section#amenities h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-top: 4vw;
+  }
+
+  section#amenities hr {
+    border-top: 0;
+    border: 1px solid #ee523c;
+    width: 3.5vw;
+    margin: 1vw 0 4vw;
+  }
+
+  section#amenities div.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 0.2vw;
+  }
+
+  section#amenities div.card-container div.amenities-card {
+    width: 15%;
+    height: 15vw;
+    background-color: rgba(128, 128, 128, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 1% 0;
+  }
+
+  section#footer a img {
+    padding: 0;
+  }
+
+  section#amenities div.card-container div.amenities-card img {
+    width: 20%;
+    height: auto;
+    padding: 0 0 2%;
+  }
+
+  section#amenities div.card-container div.amenities-card h4 {
+    font-size: 1.8rem;
+    width: 100%;
+    color: #ee523c;
+    margin: 0;
+    padding: 2% 0;
+  }
+
+  section#amenities button {
+    margin: 6% 0;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: white;
+  }
+
+  section#available-plants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 10vw;
+  }
+
+  section#available-plants h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-top: 4vw;
+  }
+
+  section#available-plants hr {
+    border-top: 0;
+    border: 1px solid #ee523c;
+    width: 3.5vw;
+    margin: 1vw 0 4vw;
+  }
+
+  section#available-plants div#plant-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+  }
+
+  section#available-plants div#plant-grid .plant-card {
+    margin: 0;
+    gap: 10%;
+  }
+
+  section#available-plants div#plant-grid .plant-card div.image-corner {
+    width: 20%;
+  }
+
+  section#partners div#partners-container div.row img {
+    width: 10vw;
+  }
+
+  section#available-plants div#plant-grid .plant-card div.image-corner img {
+    padding: 20% 0 0 20%;
+    width: 100%;
+    border-radius: 1vw;
+  }
+
+  section#available-plants div#plant-grid .plant-card div.plant-card-text {
+    margin-top: 1%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section#available-plants div#plant-grid .plant-card div.plant-card-text h4 {
+    font-size: 1.8rem;
+  }
+
+  section#available-plants div#plant-grid .plant-card div.plant-card-text p {
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  section#partners hr {
+    border-top: 0;
+    border: 1px solid #ee523c;
+    width: 3.5vw;
+    margin: 2vw 0 1vw;
+  }
+
+  section#available-plants div#plant-grid .plant-card div.plant-card-text hr {
+    border-top: 0;
+    border: 1px solid #e3e3e3;
+    width: 1vw;
+    margin: 2% 0;
+  }
+
+  section#available-plants div#plant-grid .plant-card div.plant-card-text p.growing {
+    color: #ee523c;
+  }
+
+  section#available-plants div#plant-grid .plant-card div.plant-card-text p.growing span {
+    font-weight: 900;
+  }
+
+  section#available-plants div#plant-grid .plant-card:nth-child(odd) {
+    justify-content: flex-end;
+  }
+
+  section#available-plants div#plant-grid .plant-card:nth-child(even) {
+    justify-content: flex-start;
+  }
+
+  section#partners {
+    padding-bottom: 3vw;
+    background-color: #414246;
+  }
+
+  section#partners h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-top: 3vw;
+  }
+
+  section#partners div#partners-container {
+    flex-direction: row;
+    padding-left: 3vw;
+  }
+
+  section#partners div#partners-container div.row {
+    display: flex;
+  }
+
+  section#partners div#partners-container .row:nth-child(odd) {
+    justify-content: flex-end;
+  }
+
+  section#partners div#partners-container .row:nth-child(even) {
+    justify-content: flex-start;
+  }
+
+  section#footer {
+    justify-content: flex-start;
+    padding: 2vw 0;
+  }
+
+  section#footer div p.bottom {
+    padding: 0.2vh 0;
+    visibility: visible;
+    position: static;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
