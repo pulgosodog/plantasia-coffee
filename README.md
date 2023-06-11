@@ -4,7 +4,7 @@
   <img src="cat-black-face.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Portfolio Project Website</b></h3>
+  <h3><b>Capstone Project</b></h3>
 
 </div>
 
@@ -33,7 +33,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello Microverse <a name="about-project"></a>
+# 📖 Capstone Project <a name="about-project"></a>
 
 This is the a capstone project for Microverse Core Curriculum module #1.
 This project follows similar guidelines to real-world projects, and it is built with business specifications.
