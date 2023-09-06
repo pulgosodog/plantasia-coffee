@@ -19,7 +19,7 @@ button {
 }
 
 button#quit {
-  background-image: url("/images/quit-icon.png");
+  background-image: url("images/quit-icon.png");
   position: absolute;
   background-size: cover;
   background-position: center center;
@@ -300,13 +300,13 @@ section#plans div#country-container h2 span {
 }
 
 section#plans div#country-container div#nicaragua {
-  background-image: url(../images/Nicaragua.JPG);
+  background-image: url(images/Nicaragua.JPG);
   background-size: cover;
   background-position: bottom;
 }
 
 section#plans div#country-container div#costa-rica {
-  background-image: url(../images/Costa\ Rica.JPG);
+  background-image: url(images/Costa\ Rica.JPG);
   background-size: cover;
   background-position: center;
 }
