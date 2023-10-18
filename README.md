@@ -4,7 +4,7 @@
   <img src="cat-black-face.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Capstone Project</b></h3>
+  <h3><b>Plantasia Coffee Shop</b></h3>
 
 </div>
 
