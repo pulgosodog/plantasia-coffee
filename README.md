@@ -74,7 +74,7 @@ The goal of this project is to get feedback about the achievement of technical a
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-### <a href="https://pulgosodog.github.io/capstone-project/">https://pulgosodog.github.io/capstone-project/</a>
+### <a href="https://pulgosodog.github.io/plantasia-coffee/">https://pulgosodog.github.io/plantasia-coffee/</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
